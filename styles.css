@@ -1,0 +1,116 @@
+/* ======= Estilos generales ======= */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #292929;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.titulo {
+    font-size: 2em;
+    margin: 0;
+    animation: fadeIn 2s ease;
+}
+
+footer {
+    background-color: #292929;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* ======= Botones ======= */
+.boton {
+    display: inline-block;
+    background-color: #0078d7;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #005fa3;
+    transform: scale(1.1);
+}
+
+/* Animación */
+.animado {
+    animation: flotar 3s infinite ease-in-out;
+}
+
+@keyframes flotar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ======= Tabla ======= */
+.tabla {
+    margin: 30px auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: #2e2e2e;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tabla th, .tabla td {
+    border: 1px solid #444;
+    padding: 12px;
+}
+
+.tabla th {
+    background-color: #0078d7;
+    color: white;
+}
+
+.tabla tr:nth-child(even) {
+    background-color: #3a3a3a;
+}
+
+/* ======= Galería ======= */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.miembro {
+    width: 200px;
+    background-color: #2e2e2e;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.4s ease;
+    animation: fadeIn 2s;
+}
+
+.miembro img {
+    width: 100%;
+    border-bottom: 3px solid #0078d7;
+    transition: transform 0.3s ease;
+}
+
+.miembro img:hover {
+    transform: scale(1.1);
+}
+
+.miembro p {
+    margin: 10px;
+}
